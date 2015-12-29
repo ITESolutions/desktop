@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <module>
+        <name>ITE Form Module</name>
+        <ver>1.0.0.0</ver>
+        <requirements>
+            <module>some_module</module>
+        </requirements>
+        <files>
+            <script>form.js</script>
+            <stylesheet>stylesheet.css</stylesheet>>
+            <template>form.php</template>
+            
+            
+        </files>
+        <defaults>
+            <id.prefix></id.prefix>
+        </defaults>
+        <tables>
+            
+        </tables>
+    </module>
+</root>

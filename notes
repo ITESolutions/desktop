@@ -1,0 +1,95 @@
+
+//if (Cookie::exists('remember') && !Session::exists('user')) {
+//    $hash = Cookie::get('remember');
+//    $hashCheck = DB::getInstance()->get('session', array('hash', '=', $hash));
+//    
+//    if ($hashCheck->count()) {
+//        $user = new User($hashCheck->first()->user_id);
+//        $user->login();
+//    }
+//}
+
+
+
+//
+//var window1 = { 
+//    x:140,
+//    y:300,
+//    h:300,
+//    w:500,
+//    title: 'test_title',
+//    header: (function() {
+//        var titleBar = document.createElement('div');
+//        titleBar.id = 'title_bar';
+//        titleBar.className = 'title_bar';
+//        titleBar.innerHTML = '<?php echo addslashes('TEST'); ?>';
+//        return titleBar;
+//    }),
+//    body: (function() {
+//        var body = document.createElement('div');
+//        body.className = 'window_body';
+//        body.innerHTML = '';
+//        return body;
+//    }),
+//    render: (function() {
+//        var windowDiv = document.createElement('div');
+//
+//        windowDiv.id = 'window1';
+//
+//        windowDiv.className = 'window';
+//
+//        windowDiv.height = window1.h + 'px';
+//        windowDiv.width = window1.w + 'px';
+//
+//        windowDiv.appendChild(window1.header());
+//        windowDiv.appendChild(window1.body());
+//
+//        var desktop = document.getElementById('desktop');
+//        desktop.appendChild(windowDiv);
+//    })
+//};
+//
+//window.onload = function() {
+//    window1.render();
+//    document.getElementById('title_bar').onmousedown = mouseDown;
+//    window.onmouseup = mouseUp;
+//};
+//
+//
+//var _startX = 0;            // mouse starting positions
+//var _startY = 0;
+//var _offsetX = 140;           // current element offset
+//var _offsetY = 300;
+//var _dragElement;           // needs to be passed from OnMouseDown to OnMouseMove
+//var _oldZIndex = 0;         // we temporarily increase the z-index during drag
+//var _debug = $('debug');    // makes life easier
+//
+//
+//
+//function mouseUp() {
+//    //window.removeEventListener('mousemove', divMove, true);
+//    if (_dragElement !== null)
+//    {
+//        _dragElement.style.zIndex = _oldZIndex;
+//
+//        // we're done with these events until the next OnMouseDown
+//        document.onmousemove = null;
+//        document.onselectstart = null;
+//        _dragElement.ondragstart = null;
+//        _dragElement = null;
+//    }
+//}
+//
+//function mouseDown(e) {
+//    // IE is retarded and doesn't pass the event object
+//    if (e == null) 
+//        e = window.event; 
+//    
+//    // IE uses srcElement, others use target
+//    var target = e.target != null ? e.target.parentNode : e.srcElement.parentNode;
+
+//    // for IE, left click == 1
+//    // for Firefox, left click == 0
+//    if ((e.button == 1 && window.event != null || 
+//        e.button == 0) && 
+//        target.className == 'window') {

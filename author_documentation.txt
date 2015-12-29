@@ -1,0 +1,13 @@
+________________________________________________________________________________
+ITE SOLUTIONS PHP FRAMEWORK DOCUMENTATION_______________________________________
+
+________________________________________________________________________________
+CONSTANTS_______________________________________________________________________
+
+*START_TIME*
+
+This variable is set in the index.php file in the public directory and serves as
+a marker to indicate precisely when a script began execution.
+
+    define('START_TIME', time());
+
